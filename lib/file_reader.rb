@@ -1,4 +1,4 @@
-class ReadFile
+class FileReader
   # default array of contents
   def self.data_clear
     @contents = []
@@ -33,7 +33,7 @@ class ReadFile
   end
 end
 
-ReadFile.data_clear
+FileReader.data_clear
 puts "Please input the directory path: (example: 'name-folder/' or 'name-folder/name-sub-folder/')"
 directory = gets.chomp
-ReadFile.read_folder(directory)
+FileReader.read_folder(directory)
